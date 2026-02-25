@@ -2,13 +2,13 @@
 #Launch an instance with 9000 and t2.medium
 cd /opt/
 wget https://binaries.sonarsource.com/CommercialDistribution/sonarqube-developer/sonarqube-developer-9.1.0.47736.zip
-unzip sonarqube-9.1.0.47736.zip
+unzip sonarqube-developer-9.1.0.47736.zip
 yum install java-11-amazon-corretto -y
 useradd sonar
-chown sonar:sonar sonarqube-9.1.0.47736 -R
-chmod 777 sonarqube-9.1.0.47736 -R
+chown sonar:sonar sonarqube-developer-9.1.0.47736 -R
+chmod 777 sonarqube-developer-9.1.0.47736 -R
 su - sonar
 
 #run this on server manually
-#sh /opt/sonarqube-9.1.0.47736/bin/linux/sonar.sh start
+#sh /opt/sonarqube-developer-9.1.0.47736/bin/linux/sonar.sh start
 #echo "user=admin & password=admin"
