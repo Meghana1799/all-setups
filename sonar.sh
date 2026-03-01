@@ -1,7 +1,7 @@
 #! /bin/bash
 #Launch an instance with 9000 and t2.medium
 cd /opt/
-wget https://binaries.sonarsource.com/CommercialDistribution/sonarqube-developer/sonarqube-developer-9.1.0.47736.zip
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-26.1.0.118079.zip
 unzip sonarqube-developer-9.1.0.47736.zip
 yum install java-11-amazon-corretto -y
 useradd sonar
